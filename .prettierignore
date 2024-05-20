@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Do not ignore directories, so we can walk through and apply exceptions
+!**/
+
+# Allow SCSS files everywhere
+!**/*.scss

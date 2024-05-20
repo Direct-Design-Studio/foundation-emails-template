@@ -1,9 +1,11 @@
+/** @format */
+
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
   background: $light-gray;
 }
@@ -61,7 +63,7 @@ table.button.google table td {
 }
 
 .wrapper.secondary {
-  background: darken($light-gray,4%);
+  background: darken($light-gray, 4%);
 }
 
 th.callout-inner p {
@@ -76,56 +78,58 @@ th.callout-inner p {
 }
 
 // Dark Mode
-@media (prefers-color-scheme: dark ) {
-  body, html, .body {
-    background-color: $dark-background !important;
-  }
-
+@media (prefers-color-scheme: dark) {
   body,
-  table.body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  td,
-  th {
-    color: $white !important;
-  }
-
-  .container {
-    background-color: $dark-gray !important;
-  }
-
-  .header {
+  html,
+  .body {
     background-color: $dark-background !important;
   }
 
-  .wrapper.secondary {
-    background-color: darken($dark-gray, 3%) !important;
-  }
+  // body,
+  // table.body,
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // p,
+  // td,
+  // th {
+  //   color: $white !important;
+  // }
 
-  table.button.twitter table td {
-    background-color: #00629c !important;
-    border-color: #00629c !important;
-  }
+  // .container {
+  //   background-color: $dark-gray !important;
+  // }
 
-  th.callout-inner.primary {
-    background-color: $primary-color !important;
-    border-color: darken($primary-color, 10%) !important;
-  }
+  // .header {
+  //   background-color: $dark-background !important;
+  // }
 
-  th.callout-inner.primary a {
-    color: $white !important;
-    text-decoration: underline !important;
-  }
+  // .wrapper.secondary {
+  //   background-color: darken($dark-gray, 3%) !important;
+  // }
 
-  th.callout-inner.secondary {
-    background-color: $dark-background !important;
-    border-color: lighten($dark-background, 5%) !important;
-  }
+  // table.button.twitter table td {
+  //   background-color: #00629c !important;
+  //   border-color: #00629c !important;
+  // }
+
+  // th.callout-inner.primary {
+  //   background-color: $primary-color !important;
+  //   border-color: darken($primary-color, 10%) !important;
+  // }
+
+  // th.callout-inner.primary a {
+  //   color: $white !important;
+  //   text-decoration: underline !important;
+  // }
+
+  // th.callout-inner.secondary {
+  //   background-color: $dark-background !important;
+  //   border-color: lighten($dark-background, 5%) !important;
+  // }
 }
 
 // styles that should not be processed by uncss
